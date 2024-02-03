@@ -1,8 +1,7 @@
-import Image from "next/image";
+import { Top } from "@/component/Top";
 
 export default function Home() {
   // 画面で必要な処理を記載する部分
-  const top = "トップページ";
   const sum = 1 + 2 + 3;
   const view = true;
   const array = [
@@ -10,11 +9,10 @@ export default function Home() {
     { key: 2, name: "りんご" },
     { key: 1, name: "いちご" },
   ];
-
   return (
     // 表示される部分
     <main className="flex min-h-screen flex-col items-center">
-      <h1>{top}</h1>
+      <Top />
       <p>合計値：{sum}</p>
 
       {view ? (
