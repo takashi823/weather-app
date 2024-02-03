@@ -14,7 +14,6 @@ export default function Home() {
     // 表示される部分
     <main className="flex min-h-screen flex-col items-center">
       <Top />
-      
       <Sample sum={sum} view={view}></Sample>
 
       <div className="pt-6">
@@ -25,6 +24,7 @@ export default function Home() {
           </div>
         ))}
       </div>
+
     </main>
   );
 }
