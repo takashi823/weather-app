@@ -1,4 +1,5 @@
 import { Top } from "@/component/Top";
+import { Sample } from "@/component/Sample";
 
 export default function Home() {
   // 画面で必要な処理を記載する部分
@@ -13,13 +14,8 @@ export default function Home() {
     // 表示される部分
     <main className="flex min-h-screen flex-col items-center">
       <Top />
-      <p>合計値：{sum}</p>
-
-      {view ? (
-        <div>表示されているところ</div>
-      ) : (
-        <div>表示されていないところ</div>
-      )}
+      
+      <Sample sum={sum} view={view}></Sample>
 
       <div className="pt-6">
         <h2>果物グループ</h2>
