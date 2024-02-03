@@ -1,5 +1,6 @@
 import { Top } from "@/component/Top";
 import { Sample } from "@/component/Sample";
+import { Weather } from "@/component/Weather";
 
 export default function Home() {
   // 画面で必要な処理を記載する部分
@@ -25,6 +26,9 @@ export default function Home() {
         ))}
       </div>
 
+      <div className="mt-6">
+        <Weather />
+      </div>
     </main>
   );
 }
